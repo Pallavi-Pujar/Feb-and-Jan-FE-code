@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Form</title>
+</head>
+<body>
+   <h2>Basic Format of Form</h2> 
+   <center>
+   <form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <br>
+    <label for="un">User name:</label>
+    <input type="text" id="un" placeholder="Enter Username...." name="Username">
+    <br>
+    <br>
+    <lebel for="email">Email:</lebel>
+    <input type="email" id="email" placeholder="Enter the email..." name="email">
+    <br>
+    <br>
+    <label for="pd">Password: <span style="color:red">*</span></label>
+    <input type="password" id="pd" placeholder="Enter the password..." name="password" required>
+    <br>
+    <br>
+    <label for="Captcha">Enter Captcha:</label>
+    <input type="text" id="Captcha" placeholder="Enter Captcha...." name="Captcha">
+    <br>
+    <br>
+    <label for="dt">Date of Birth:</label>
+    <input type="date" id="dt" name="dateTime">
+    <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>General Information</legend>
+    <label for="url">Profile URL:</label>
+    <input type="url" id="url" name="url">
+    <br>
+    <br>
+    <label for="CV">Resume:</label>
+    <input type="file" id="CV" name="CV">
+    <br>
+    <br>
+    <label>Rating:</label>
+    <input type="range">
+    <br>
+    <br>
+    <label><input type="checkbox">Cash</label>
+    <label><input type="checkbox">UPI</label>
+    <br>
+    <br>
+    <label>Gender:</label>
+    <label><input type="radio" name="opt" value="male">Male</label>
+    <label><input type="radio" name="opt" value="female">Female</label>
+    <br>
+    <br>
+    <label for="tech">Choose the Tech Stack</label>
+    <select name="tech" id="tech" multiple>
+        <option  value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+    </select>
+    <br>
+    </fieldset>
+    <br>
+    <label for="comment">Comments:</label>
+    <textarea id="comment" rows="5" cols="40" name="comments" placeholder="Enter Comments">
+    </textarea>
+</center>
+<br>
+<br>
+    <input type="submit">
+    <input type="reset" value="cancel">
+    <br>
+    <br>
+    <button type="button">help center</button>
+    <br>
+   </form>
+</body>
+</html>
